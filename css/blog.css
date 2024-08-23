@@ -1,0 +1,764 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Khula", sans-serif;
+    font-size: 15px;
+    color: #999999;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #373737;
+    line-height: 26px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 45px;
+}
+
+p {
+    color: #999999;
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    color: #999999;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+.boxed-btn {
+    color: #fff;
+    background: #06d6a0;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* ~~~~~~~~~~~~~HEADER SECTION~~~~~~~~~~~~ */
+
+.header-area {
+    padding: 10px 0;
+}
+
+.main-menu ul {
+   list-style-type: none;
+   display: flex;
+   align-items: center;
+   padding-top: 15px;
+}
+
+.main-menu ul li {
+    padding: 0 20px;
+    position: relative;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: #888888;
+    text-transform: capitalize;
+}
+
+.main-menu ul li a:hover {
+    color: #06d6a0;
+}
+
+.header-area .boxed-btn {
+    padding: 12px 25px;
+}
+
+
+/* ~~~~~~~~~~DROPDOWN MENU~~~~~~~~~~ */
+
+.main-menu ul li ul {
+    background: #ffffff;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    top: -999px;
+    transition: all .6s ease;
+}
+.main-menu ul li:hover ul {
+    opacity: 1;
+    top: 25px;
+}
+.main-menu ul li ul li {
+    padding: 10px;
+    padding-left: 15px;
+    width: 150px;
+}
+.main-menu ul li ul li:hover {
+    background: #06d6a0;
+}
+.main-menu ul li ul li:hover a {
+    color: #fff;
+}
+
+.mea-menu {
+    background: #fff;
+    width: 800px;
+    height: 300px;
+    left: -370px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.mea-menu h5 {
+    font-size: 15px;
+}
+
+.mea-menu .menu-cta span {
+    color: #06d6a0;
+    font-weight: bold;
+}
+
+.mea-menu .menu-cta .boxed-btn {
+    color: #fff;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    padding: 150px 0;
+    background:linear-gradient(rgba(7, 59, 76, 0.4), rgba(7, 59, 76, 0.4)), url(../img/08.Case_study_v1.jpg) no-repeat center bottom;
+}
+
+.hero-section p {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/* BLOG SECTION */
+
+.single-blog-box {
+    margin-top: 90px;
+    display: block;
+    color: #999999;
+    line-height: 28px;
+    box-shadow: 2px 2px 4px #ddd;
+    border-radius: 4px;
+}
+
+.blog-img-wrapper {
+    height: 270px;
+}
+
+.blog-img-1 {
+    background: url(../img/Hp-3-bloge-img-1.png) no-repeat center center/cover;
+}
+
+.blog-img-2 {
+    background: url(../img/Hp-3-bloge-img-2.png) no-repeat center center/cover;
+}
+
+.blog-img-3 {
+    background: url(../img/Hp-3-blog-img-3.png) no-repeat center center/cover;
+}
+.blog-img-4 {
+    background: url(../img/blog-img-4.jpg) no-repeat center center/cover;
+}
+.blog-img-5 {
+    background: url(../img/blog-img-5.jpg) no-repeat center center/cover;
+}
+.blog-img-6 {
+    background: url(../img/blog-img6.jpg) no-repeat center center/cover;
+}
+.blog-img-7 {
+    background: url(../img/blog-img-7.jpg) no-repeat center center/cover;
+}
+.blog-img-8 {
+    background: url(../img/blog-img-8.jpg) no-repeat center center/cover;
+}
+.blog-img-9 {
+    background: url(../img/blog-img-9.jpg) no-repeat center center/cover;
+}
+
+.single-blog-box p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.single-blog-box p:hover {
+    color: #06d6a0;
+}
+
+.single-blog-box .blog-meta {
+    margin-bottom: 30px;
+}
+
+.single-blog-box h4 {
+    margin-bottom: 30px;
+}
+
+.single-blog-box h4:hover {
+    color: #06d6a0;
+}
+
+.blog-box-content {
+    padding: 40px 20px;
+}
+
+
+.load-more-btn {
+    margin-top: 50px;
+    color: #373737;
+    font-size: 18px;
+}
+.load-more-btn:hover a {
+    color: #06d6a0;
+}
+
+
+/* CTA SECTION */
+
+.cta-area {
+    background:linear-gradient(rgba(7, 59, 76, 0.4), rgba(7, 59, 76, 0.4)), url(../img/Hp-4-buy-now.png);
+    margin: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-area h2,
+.cta-area p {
+    color: #fff;
+}
+
+.cta-area p {
+    margin-bottom: 25px;
+}
+
+.cta-area .boxed-btn {
+    color: #fff;
+    padding: 15px 50px;
+}
+
+/* FOOTER AREA */
+
+.email-signup-form {
+    margin-bottom: 30px;
+}
+
+.email-signup-form input[type='email'] {
+    width: 68%;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: none;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.email-signup-form input[type='submit'] {
+    width: 30%;
+}
+
+.footer-area .social {
+    margin-bottom: 5px;
+}
+
+.footer-area .email-signup-form .boxed-btn {
+    padding: 11px 20px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-links li {
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.social-links li:first-child,
+.social-links li:nth-child(4) {
+    margin-left: 0;
+}
+
+.social-links i {
+    margin-right: 5px;
+}
+
+
+/* FOOTER AREA */
+
+.footer-area ul {
+    padding: 0;
+}
+
+.footer-area a {
+    text-transform: capitalize;
+}
+
+.footer-area a:hover {
+    color: #06d6a0;
+}
+
+.footer-area .social-links i {
+    margin-right: 5px;
+}
+
+.footer-area form {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-area form input {
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.footer-area form input[type='email'] {
+    padding: 15px;
+    border-radius: 4px 0 0 4px;
+}
+.footer-area form input[type='submit'] {
+    color: #fff;
+    background-color: #06d6a0;
+    padding: 15px 25px;
+    border-radius: 0 4px 4px 0;
+}
+
+
+/* COPYRIGHT SECTION */
+
+.copyright-text {
+    padding: 20px 0;
+}
+
+
+/* ==============~~~ BLOG SINGLE PAGE STYLE ~~~=============== */
+
+
+.blog-single-page .container {
+    width: 780px;
+}
+
+.blog-single-page h4 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.blog-single-page img {
+    margin-bottom: 30px;
+}
+
+.blog-single-page .social-link {
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-left: 10px;
+    padding-top: 45px;
+}
+
+.blog-single-page .social-link li a {
+    text-transform: capitalize;
+    margin-right: 20px;
+    background: #275baa;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+.blog-single-page .social-link li .tweet {
+    background: #28c8f0;
+}
+
+.blog-single-page .social-link li .print {
+    background: #d6061e;
+}
+
+.blog-single-page .social-link li i {
+    margin-right: 15px;
+}
+
+.blog-single-page .bloger {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    margin-top: 30px;
+}
+
+.blog-single-page .bloger-pic img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.blog-single-page .bloger-detail h5 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 0;
+}
+
+.blog-single-page .reply-form {
+    margin-top: 50px;
+}
+
+.blog-single-page .reply-form input {
+    padding: 15px 20px;
+    text-transform: capitalize;
+    width: 47.5%;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 4px;
+}
+
+.blog-single-page .reply-form input[type='text'] {
+    margin-right: 32px;
+}
+
+.blog-single-page .reply-form textarea {
+    text-transform: capitalize;
+    padding: 20px;
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.blog-single-page .reply-form .boxed-btn {
+    border: none;
+    width: 25%;
+}
+
+
+
+/* =============~~~ ABOUT US PAGE STYLE ~~~============= */
+
+/* ABOUT US HERO SECTION */
+
+.about-us-hero-section {
+    padding: 150px 0;
+    background:linear-gradient(rgba(7, 59, 76, 0.7), rgba(7, 59, 76, 0.7)), url(../img/13.About_us-bg.jpg) no-repeat center bottom;
+}
+
+.about-us-hero-section p {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/* ABOUT SECTION */
+
+.about h3 {
+    font-size: 24px;
+}
+
+/* TEAM MEMBER */
+
+.team-member .single-team-member img {
+    width: 275px;
+    height: 275px;
+    box-shadow: 0 2px 8px 4px #ddd;
+    border-radius: 4px;
+}
+
+.team-member .single-team-member h6 {
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.team-member .single-team-member span {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/* TESTIMONIAL SECTION */
+
+.testimonial-carousel.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+    background: #ddd;
+    opacity: 1;
+}
+
+.testimonial-carousel.owl-theme .owl-controls .owl-page.active span {
+    background-color: #ef476f;
+}
+
+.testimonial-content {
+    font-size: 24px;
+    color: #373737;
+    margin-bottom: 40px;
+}
+
+.testimonial-meta h4 {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #373737;
+    margin-bottom: 20px;
+}
+
+.testimonial-meta p {
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 50px;
+}
+
+/* LOGO SECTION */
+
+.logo-item-inner {
+    cursor: pointer;
+}
+
+
+
+/* =================~~~ TEAM PAGE STYLE ~~~================= */
+
+.team-hero-section {
+    padding: 150px 0;
+    background:linear-gradient(rgba(7, 59, 76, 0.5), rgba(7, 59, 76, 0.5)), url(../img/team-hero-bg.jpg) no-repeat center bottom;
+}
+
+.team-hero-section p {
+    color: #fff;
+}
+
+.team-member .second-row-margin-top {
+    margin-top: 30px;
+}
+
+
+
+/* ===================~~~ CONTACT PAGE - 1 STYLE ~~~==================== */
+
+.contact-hero-section {
+    padding: 150px 0;
+    background:linear-gradient(rgba(7, 59, 76, 0.5), rgba(7, 59, 76, 0.5)), url(../img/contact-hero-bg.jpg) no-repeat center bottom;
+}
+
+.contact-hero-section p {
+    color: #fff;
+}
+
+.contact-section img {
+    box-shadow: 6px 10px 8px #ddd;
+}
+
+.contact-form input[type='text'], 
+.contact-form input[type='email'],
+.contact-form input[type='number'],
+.contact-form textarea {
+    text-transform: capitalize;
+    padding: 20px;
+    background: rgba(221, 221, 221, 0.3);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    width: 48%;
+}
+.contact-form input[type='number'] {
+    margin-left: 23px;
+}
+
+.contact-form input[type='email'] {
+    width: 100%;
+}
+
+.contact-form textarea {
+    width: 100%;
+}
+
+.location-map {
+    position: relative;
+}
+
+.address-number {
+    position: absolute;
+    background: #06d6a0;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 400px;
+    height: 180px;
+    top: 100px;
+    left: 565px;
+}
+.address-number p {
+    color: #ffffff;
+}
+.address-number .number p {
+    margin-bottom: 10px;
+}
+
+
+/* ================~~~ CONTACT PAGE V2 STYLE ~~~================ */
+
+.contact-v2-hero-section {
+    padding: 150px 0;
+    background:linear-gradient(rgba(7, 59, 76, 0.5), rgba(7, 59, 76, 0.5)), url(../img/15.Contact_us_v2.jpg) no-repeat center bottom;
+}
+
+.contact-v2-hero-section p {
+    color: #fff;
+}
+
+.contact-icon {
+    color: #06d6a0;
+}
+
+.contact-detail p {
+    margin-bottom: 10px;
+}
+
+
+
+/* ===============~~~ FREE SEO ANALYSIS STYLE ~~~=============== */
+
+
+.free-seo-hero-section {
+    padding: 150px 0;
+    background:linear-gradient(rgba(7, 59, 76, 0.5), rgba(7, 59, 76, 0.5)), url(../img/18.Free_SEO_Analysis.jpg) no-repeat center bottom;
+}
+
+.free-seo-hero-section p {
+    color: #fff;
+}
+
+.free-seo {
+    margin-top: 60px;
+}
+
+.free-seo h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.free-seo-form-box {
+    padding: 50px;
+    box-shadow: 1px 10px 10px 10px #ddd;
+}
+
+.free-seo .seo-form input {
+    width: 100%;
+    text-transform: capitalize;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.free-seo .seo-form .boxed-btn {
+    margin-top: 20px;
+}
+
+/* =================~~~ PRICING PAGE STYLE ~~~================= */
+
+/* FEATURE SECTION */
+
+.feature-section h3,
+.feature-section .feature-content h5 {
+    margin-bottom: 20px;
+}
+
+.feature-section .feature-content .icon img {
+    margin-top: 15px;
+    width: 60px;
+    height: auto;
+}
+
+/*  PRICING SECTION */
+
+.pricing-single-box {
+    margin-top: 90px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.pricing-heading {
+    background-color: #fbfbfb;
+    padding: 35px 0;
+}
+
+.pricing-heading h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.pricing-heading .pricing-count {
+    font-size: 50px;
+    color: #10b3fc;
+}
+
+.pricing-body {
+    background: #fff;
+    padding-top: 40px;
+    color: #999999;
+    line-height: 45px;
+    font-size: 17px;
+}
+.pricing-section .boxed-btn {
+    display: inline-block;
+    width: 100%;
+}
+
+.pricing-single-box:hover .pricing-heading h4,
+.pricing-single-box:hover .pricing-heading p {
+    color: #10b3fc;
+}
+

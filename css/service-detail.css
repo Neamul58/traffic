@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Khula", sans-serif;
+    font-size: 15px;
+    color: #999999;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #373737;
+    line-height: 26px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+p {
+    color: #999999;
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    color: #999999;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+.boxed-btn {
+    color: #fff;
+    background: #06d6a0;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* ~~~~~~~~~~~~~HEADER SECTION~~~~~~~~~~~~ */
+
+.header-area {
+    padding: 10px 0;
+}
+
+.main-menu ul {
+   list-style-type: none;
+   display: flex;
+   align-items: center;
+   padding-top: 15px;
+}
+
+.main-menu ul li {
+    padding: 0 20px;
+    position: relative;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: #888888;
+    text-transform: capitalize;
+}
+
+.main-menu ul li a:hover {
+    color: #06d6a0;
+}
+
+.header-area .boxed-btn {
+    padding: 12px 25px;
+}
+
+
+/* ~~~~~~~~~~DROPDOWN MENU~~~~~~~~~~ */
+
+.main-menu ul li ul {
+    background: #ffffff;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    top: -999px;
+    transition: all .6s ease;
+}
+.main-menu ul li:hover ul {
+    opacity: 1;
+    top: 25px;
+}
+.main-menu ul li ul li {
+    padding: 10px;
+    padding-left: 15px;
+    width: 150px;
+}
+.main-menu ul li ul li:hover {
+    background: #06d6a0;
+}
+.main-menu ul li ul li:hover a {
+    color: #fff;
+}
+
+.mea-menu {
+    background: #fff;
+    width: 800px;
+    height: 300px;
+    left: -370px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.mea-menu h5 {
+    font-size: 15px;
+}
+
+.mea-menu .menu-cta span {
+    color: #06d6a0;
+    font-weight: bold;
+}
+
+.mea-menu .menu-cta .boxed-btn {
+    color: #fff;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    padding: 150px 0;
+    background:linear-gradient(rgba(7, 59, 76, 0.6), rgba(7, 59, 76, 0.6)), url(../img/07.Service_details.jpg);
+}
+
+.hero-section p {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+/* SERVICES SECTION */
+
+.services-section {
+    padding-top: 120px;
+}
+
+.tile-gallery {
+    position: relative;
+    right: 20px;
+}
+
+.tile-gallery img {
+    box-shadow: 3p 3px 9px #999999;
+    border-radius: 5px;
+}
+
+.absolute-1 {
+    position: absolute;
+    left: 45px;
+    top: 80px;
+}
+
+.services-section .first-row-content h3 {
+   line-height: 34px;
+}
+
+.services-section .first-row-content a {
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #06d6a0;
+}
+
+
+/* CASE STUDY SECTION */
+
+.single-case-study {
+    width: 320px;
+    height: 300px;
+    background-color: #06d6a0;
+}
+
+.case-study-bg-1 {
+    background: url(../img/baq-hp-3.png);
+}
+
+.case-study-bg-2 {
+    background: url(../img/cheir-hp-3.png);
+}
+
+.case-study-bg-3 {
+    background: url(../img/sc-img-hp-3.png);
+}
+
+.case-study-bg-4 {
+    background: url(../img/watch-hp-3.png);
+}
+
+.case-study-bg-5 {
+    background: url(../img/flag-hp-3.png);
+}
+
+.single-case-study h4 {
+    font-size: 20px;
+    color: #fff;
+}
+.single-case-study p {
+    color: #fff;
+}
+.single-case-study a {
+    color: #fff;
+    font-size: 24px;
+}
+.case-study-wrapper {
+    background: rgba(6, 214, 160, 0.8);
+    color: #fff;
+    width:320px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.single-case-study:hover .case-study-wrapper {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* PRICING SECTION */
+
+.single-pricing-box {
+    padding: 30px;
+    margin: 90px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pricing-heading {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.pricing-heading h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.pricing-heading .pricing-count {
+    font-size: 50px;
+    color: #06d6a0;
+}
+
+.pricing-content {
+    line-height: 40px;
+}
+
+.single-pricing-box:hover {
+    border-color: #06d6a0;
+}
+
+.single-pricing-box:hover .pricing-heading {
+    border-color: #06d6a0;
+}
+
+/* CTA SECTION */
+
+.cta-area {
+    background:linear-gradient(rgba(7, 59, 76, 0.4), rgba(7, 59, 76, 0.4)), url(../img/Hp-4-buy-now.png);
+    margin: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-area h2,
+.cta-area p {
+    color: #fff;
+}
+
+.cta-area p {
+    margin-bottom: 25px;
+}
+
+.cta-area .boxed-btn {
+    color: #fff;
+    padding: 15px 50px;
+}
+
+/* FOOTER AREA */
+
+.email-signup-form {
+    margin-bottom: 30px;
+}
+
+.email-signup-form input[type='email'] {
+    width: 68%;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: none;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.email-signup-form input[type='submit'] {
+    width: 30%;
+}
+
+.footer-area .social {
+    margin-bottom: 5px;
+}
+
+.footer-area .email-signup-form .boxed-btn {
+    padding: 11px 20px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-links li {
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.social-links li:first-child,
+.social-links li:nth-child(4) {
+    margin-left: 0;
+}
+
+.social-links i {
+    margin-right: 5px;
+}
+
+
+.footer-area ul {
+    padding: 0;
+}
+
+.footer-area a {
+    text-transform: capitalize;
+}
+
+.footer-area a:hover {
+    color: #06d6a0;
+}
+
+.footer-area .social-links i {
+    margin-right: 5px;
+}
+
+.footer-area form {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-area form input {
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.footer-area form input[type='email'] {
+    padding: 15px;
+    border-radius: 4px 0 0 4px;
+}
+.footer-area form input[type='submit'] {
+    color: #fff;
+    background-color: #06d6a0;
+    padding: 15px 25px;
+    border-radius: 0 4px 4px 0;
+}
+
+
+/* COPYRIGHT SECTION */
+
+.copyright-text {
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+

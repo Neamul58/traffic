@@ -1,0 +1,27 @@
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
+    .boxed-btn {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+    .header-area .boxed-btn {
+        padding: 10px 15px;
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+
+}
+
+
+@media only screen and (min-device-width: 480px) and (max-device-height: 767px) {
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 479px) {
+
+}

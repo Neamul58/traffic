@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #fff;
+    font-family: "Khula", sans-serif;
+    font-size: 15px;
+    transition: all 1s ease;
+}
+
+html,body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #373737;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 15px;
+    color: #999999;
+    line-height: 26px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.boxed-btn {
+    font-size: 15px;
+    color: #fff;
+    background-color: #06d6a0;
+    padding: 20px 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+/* HEADER AREA */
+
+.header-area.header-absolute {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+  }
+  
+  .header-area span {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .header-area span:hover {
+    color: #06d6a0;
+  }
+/* OFF CANVAS MENU */
+
+.off-canvas-menu {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #073b4c;
+    left: -3000px; 
+    opacity: 0;
+    z-index: 12;
+    transition: all 0.4s ease;
+}
+
+.off-canvas-menu ul {
+    margin-top: 30px;
+}
+
+.off-canvas-menu .menu-logo {
+    text-align: start;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.off-canvas-menu .close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 20px;
+    padding-right: 20px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.off-canvas-menu ul li {
+    padding: 5px 0;
+}
+
+.off-canvas-menu ul li a {
+    text-transform: capitalize;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.off-canvas-menu ul li a:hover {
+    color: #06d6a0;
+    font-size: 22px;
+}
+
+.off-canvas-menu .social-links h4 {
+    font-size: 22px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 100px;
+    padding-left: 20px;
+}
+
+.off-canvas-menu .social-links ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.off-canvas-menu .social-links ul li {
+    padding: 10px 15px;
+}
+
+.off-canvas-menu .social-links ul li a {
+    font-size: 14px;
+}
+
+.off-canvas-menu .social-links i {
+    margin-right: 4px;
+}
+
+.off-canvas-menu.show-off-canvas-menu {
+    left: 0;
+    opacity: 1;
+}
+
+.off-canvas-menu-shade {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #073b4c;
+    opacity: 0;
+    z-index: 10;
+    left: -9999px;
+    transition: all 0.4s ease;
+}
+.off-canvas-menu-shade.active {
+    opacity: 0.7;
+    left: 0;
+}
+
+
+/* HERO SECTION */
+
+.hero-section {
+    background: url(../img/hp-4-hero-bg.png) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-section h1 {
+    color: #fff;
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.hero-section p {
+    color: #fff;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.hero-section .check-form input {
+    color: #fff;
+    background-color: #073b4c;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+
+.hero-section .check-form .boxed-btn {
+    margin-right: 0;
+    background: #06d6a0;
+    padding: 15px 45px;
+}
+
+
+/* SERVICES SECTION */
+
+.services-section {
+    padding-top: 120px;
+}
+
+.tile-gallery {
+    position: relative;
+    right: 20px;
+}
+
+.tile-gallery img {
+    box-shadow: 3p 3px 9px #999999;
+    border-radius: 5px;
+}
+
+.absolute-1 {
+    position: absolute;
+    left: 45px;
+    top: 80px;
+}
+
+.services-section .first-row-content h3 {
+   line-height: 34px;
+}
+
+.services-section .first-row-content a {
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #06d6a0;
+}
+
+.service-2nd-row {
+    padding-top: 100px;
+}
+
+.second-row-content {
+    position: relative;
+    padding: 100px 80px;
+    padding-left: 140px;
+    margin-right: -40px;
+}
+
+.second-row-content::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background: #f4f4f4;
+   z-index: -1;
+}
+
+.services-single-box {
+    margin: 20px;
+    width: 280px;
+    height: 180px;
+}
+
+.services-single-box .services-icon {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.service-2nd-row img {
+    margin-top: -100px;
+    box-shadow: 0 2px 4px 0 #999999;
+    border-radius: 7px;
+}
+
+/* POPUP VIDEO SECTION */
+
+.popup-video {
+    background: url(../img/Hp-4-video-play.png) no-repeat center top/cover;
+    margin-bottom: 60px;
+}
+
+.popup-video h1 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.popup-video p {
+    color: #fff;
+}
+
+.popup-video .video-play-btn {
+    font-size: 24px;
+    color: #fff;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #06d6a0;
+    border-radius: 50%;
+    line-height: 65px;
+    padding-left: 4px;
+}
+
+/* FEATURE SECTION */
+
+.feature-section h3,
+.feature-section .feature-content h5 {
+    margin-bottom: 20px;
+}
+
+/* TESTIMONIAL SECTION */
+
+.single-testimonial-box {
+    margin-top: 60px;
+}
+
+.single-testimonial-box i {
+    color: #999999;
+    font-size: 24px;
+}
+
+.testimonial-content {
+    padding: 20px 15px;
+    position: relative;
+}
+
+.testimonial-content::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 24px;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    background: #06d6a0;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.single-testimonial-box .testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testimonial-author {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+.testimonial-author strong {
+    color: #373737;
+}
+
+.active .testimonial-content {
+    background: #06d6a0;
+    color: #fff;
+}
+
+.active .testimonial-content i,
+.active .testimonial-content p {
+    color: #fff;
+}
+
+.active .testimonial-content::after {
+    display: block;
+}
+
+.active .testimonial-author {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* CTA SECTION */
+
+.cta-section {
+    background: url(../img/Hp-4-buy-now.png);
+}
+
+.cta-section h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.cta-section p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.cta-section .boxed-btn {
+    padding: 15px 40px;
+}
+
+/* FOOTER AREA */
+
+.footer-area {
+    background: #073b4c;
+}
+
+.footer-area h4 {
+    color: #fff;
+}
+
+.footer-area ul {
+    padding: 0;
+}
+
+.footer-area a {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footer-area a:hover {
+    color: #06d6a0;
+}
+
+.footer-area .social-links i {
+    margin-right: 5px;
+}
+
+.footer-area form {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-area form input {
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.footer-area form input[type='email'] {
+    padding: 15px;
+    border-radius: 4px 0 0 4px;
+}
+.footer-area form input[type='submit'] {
+    color: #fff;
+    background-color: #06d6a0;
+    padding: 15px 25px;
+    border-radius: 0 4px 4px 0;
+}
+
+
+/* COPYRIGHT SECTION */
+
+.copyright-text {
+    background: #0f2e38;
+    padding: 20px 0;
+    color: #fff;
+}
+
+
+
+
+
+
